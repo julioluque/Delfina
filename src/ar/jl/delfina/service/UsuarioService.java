@@ -15,5 +15,17 @@ public class UsuarioService {
 	public String save(UsuarioDto usuario) {
 		return dao.save(usuario);
 	}
+
+	public UsuarioDto read(int id) {
+		return dao.read(id);
+	}
+	
+	public String update(UsuarioDto usuario) {
+		return dao.update(usuario);
+	}
+	
+	public String delete(int id) {
+		return dao.delete(id);
+	}
 	
 }

@@ -9,9 +9,9 @@
 <title>Login</title>
 </head>
 <body>
-	Ingrese sus datos
-	<label>FORMULARIO CON MODEL</label>
-	<form:form action="perfil" modelAttribute="usr">
+	
+	<label>ALTA</label>
+	<form:form action="guardarUsuario" modelAttribute="usr">
 		<div>
 			Nombre (*):
 			<form:input path="nombre" />
@@ -45,5 +45,61 @@
 		</div>
 
 	</form:form>
+	
+	
+	<label>BUSQUEDA</label>
+	<form action="buscarUsuario" method="GET">
+		<input type="text" name="id">
+		<input type="submit" value="Buscar">
+	</form>
+
+	<label>BAJA</label>
+	<form action="borrarUsuario" method="POST">
+		<input type="text" name="id">
+		<input type="submit" value="ELIMINAR">
+	</form>
+	
+		
+	<label>MODIFICACION</label>
+	<form:form action="actualizarUsuario" modelAttribute="usr">
+		<div>
+			Id (*):
+			<form:input path="id" />
+			<form:errors path="id" style="color:red" />
+			<br />
+			<br />
+			Nombre (*):
+			<form:input path="nombre" />
+			<form:errors path="nombre" style="color:red" />
+			<br />
+			<br /> 
+			Usuario (*):
+			<form:input path="usuario" />
+			<form:errors path="usuario" style="color:red" />
+			<br />
+			<br /> 
+			Email (*):
+			<form:input path="email" />
+			<form:errors path="email" style="color:red" />
+			<br />
+			<br /> 
+			Telefono (*):
+			<form:input path="telefono" />
+			<form:errors path="telefono" style="color:red" />
+			<br />
+			<br /> 
+			Clave (*):
+			<form:password path="clave" />
+			<form:errors path="clave" style="color:red" />
+			<br />
+			<br />
+		</div>
+
+		<div>
+			<input type=submit value="Actualizar">
+		</div>
+
+	</form:form>
+	
 </body>
 </html>

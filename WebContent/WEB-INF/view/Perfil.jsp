@@ -10,7 +10,7 @@
 
 INGRESASTE!!!!!!
 
-	<h2>MI PERFIL</h2>
+	<h2>MI PERFIL </h2>
 
 	<div>
 		<label>NOMBRE: </label>
@@ -33,5 +33,27 @@ INGRESASTE!!!!!!
 		<strong>${usr.clave}</strong>
 	</div>
 	
+	
+	<br/><br/>
+	<div>
+		<label>RESULTADOS: </label>
+		<table>
+			<tr>
+				<td>NOMBRE</td>
+				<td>EMAIL</td>
+				<td>TELEFONO</td>
+			</tr>
+			<tr>
+				<td>${buscar.usuario}</td>
+				<td>${buscar.email}</td>
+				<td>${buscar.telefono}</td>
+			</tr>
+		</table>
+	</div>
+	
+		<br/><br/>
+	<div>
+		<label>REGISTRO ELIMINADO : ${eliminado}</label>
+	</div>
 </body>
 </html>
