@@ -46,20 +46,20 @@
 
 	</form:form>
 	
-	
+	<br/><br/>
 	<label>BUSQUEDA</label>
 	<form action="buscarUsuario" method="GET">
 		<input type="text" name="id">
 		<input type="submit" value="Buscar">
 	</form>
-
+	<br/><br/>
 	<label>BAJA</label>
 	<form action="borrarUsuario" method="POST">
 		<input type="text" name="id">
 		<input type="submit" value="ELIMINAR">
 	</form>
 	
-		
+	<br/><br/>	
 	<label>MODIFICACION</label>
 	<form:form action="actualizarUsuario" modelAttribute="usr">
 		<div>
